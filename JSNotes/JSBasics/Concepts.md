@@ -99,4 +99,4 @@ From our perspective,JS behaves in a single thread
 One line of code,being executed,in the order that it appears
 
 
-# Function Invocation and Execution Stack
+## Function Invocation and Execution Stack:
