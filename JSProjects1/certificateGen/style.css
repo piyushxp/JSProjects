@@ -1,0 +1,117 @@
+:root {
+  --dark-color: #212121;
+}
+
+body {
+  font-family: system-ui;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.5em;
+}
+
+h4 {
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+h1,
+.lead {
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 2em;
+  color: rgb(255, 255, 0);
+}
+
+img {
+  border-radius: 150%;
+  height: 120px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main * {
+  margin-bottom: 12px;
+}
+
+input {
+  text-align: center;
+  font-size: large;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  text-transform: capitalize;
+}
+
+/* for styling the autocomplete style */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: var(--dark-color) !important;
+}
+
+button {
+  background: #8bc34a;
+  color: #fff;
+  border: none;
+  font-size: 0.8em;
+  padding: 5px 15px;
+  margin: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+a {
+  color: #6492f6;
+}
+
+/* dark mode css */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--dark-color);
+    color: #fff;
+  }
+  input,
+  input:active {
+    background: var(--dark-color);
+    border-color: #fff;
+    color: #fff;
+  }
+
+  /* for styling the autocomplete style */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff !important;
+  }
+}
+
+body {
+    /* Location of the image */
+    background-image: url(family.jpg);
+    
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+    
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+    
+    /* Background image is fixed in the viewport so that it doesn't move when 
+       the content's height is greater than the image's height */
+    background-attachment: fixed;
+    
+    /* This is what makes the background image rescale based
+       on the container's size */
+    background-size: cover;
+    
+    /* Set a background color that will be displayed
+       while the background image is loading */
+    background-color: #464646;
+  }
+
+
