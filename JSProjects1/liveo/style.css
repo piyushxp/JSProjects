@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Freckle Face', cursive;
+}
+
+.showcase {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  padding: 100px;
+  justify-content: space-between;
+  align-items: center;
+  color: aliceblue;
+  background: #111;
+  z-index: 2;
+}
+
+.showcase header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  padding: 40px 100px;
+  width: 100%;
+}
+
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(133, 119, 119);
+  mix-blend-mode: overlay;
+}
+
+.text {
+  position: relative;
+  z-index: 10;
+}
+
+.text h2 {
+  font-size: 5em;
+  font-weight: 800;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.text h3 {
+  font-size: 3em;
+  font-weight: 600;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.text p {
+  font-size: 1.1em;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+
+.logo {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url('menu.jpg');
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  background-size: 30px;
+  cursor: pointer;
+}
+
+.toggle.active {
+  background: url('close.png');
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+}
+
+.menu {
+  display: none;
+}
